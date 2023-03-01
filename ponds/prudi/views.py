@@ -7,3 +7,6 @@ class HomePage(TemplateView):
 
 class Proekti(TemplateView):
     template_name = 'prudi/proekti.html'
+
+class Demo(TemplateView):
+    template_name = 'prudi/demo.html'
