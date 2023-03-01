@@ -1,0 +1,84 @@
+{% load static%}
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CrimeaPools</title>
+    <link rel="stylesheet" href="{% static 'prudi/css/main.css' %}">
+    <link rel="stylesheet" href="{% static 'prudi/font-awesome-4.7.0/css/font-awesome.min.css' %} ">
+    <script src="{% static 'prusi/js/main.js' %}" defer></script>
+</head>
+<body>
+    <header id="header_">
+        <div id="logo">CrimeaPools</div>
+        <div id="nav">
+            <button class="nav_butt">Главная💎</button>
+            <button class="nav_butt">Очистка</button>
+            <button class="nav_butt">Цены</button>
+            <button class="nav_butt">Доп. услуги</button>
+            <a href="{% url 'proekti' %}"><button class="nav_butt">Наши проекты</button></a>
+        </div>
+    </header>
+    <main id="main_">
+        <div class="main_1">
+            <p id="logo_2">Пруды Крыма</p>
+            <p>Лучшее решение для вашего участка!</p><br>
+            <div class="btms" id="btms">
+                <button class="btm_1" id="popup_1">Кнопка</button>
+                <button class="btm_2" id="popup_2">Кнопка</button>
+            </div>
+        </div>
+        <div class="main_2">
+            <div class="press_1">
+                <h1><i class="fa fa-circle-thin" aria-hidden="true"></i>Автономность</h1>
+                <p>Созданные по нашей технологии водоемы не нуждаются в постоянном обслуживания и не будут обременять вас лишними заботами.</p><br>
+                <button>Подробнее</button>
+            </div>
+            <div class="press_2">
+                <h1><i class="fa fa-address-card" aria-hidden="true"></i>О нас</h1>
+                <p>Наша команда опытных сотрудников всегда готова ответить на интересующие вас вопросы, помогать советами, признавать свои ошибки.</p><br>
+                <button>Подробнее</button>
+            </div>
+            <div class="press_3">
+                <h1><i class="fa fa-rub" aria-hidden="true"></i>Гарантия</h1>
+                <p>15 лет в опыта в данной сфере позволяет нам качественно и в срок выполнять заказы.<br>Большое число выполненных проектов.</p><br>
+                <button>Подробнее</button>
+            </div>
+        </div>
+        <div class="main_3">
+            <div class="press_4">
+                <h1>Заказать звонок</h1>
+                <p>Оставьте свой номер и мы вам перезвоним.</p><br>
+                <input class="inp_3" type="text" placeholder="+7(978)-777-77-77">
+                <button class="send_2">Заказать звонок</button>
+                <!-- <button>Подробнее</button> -->
+            </div>
+            <div class="press_5">
+                <h1>Для клиентов</h1>
+                <p>
+                    <li><span class="spans">✔</span>Текст</li>
+                    <li><span class="spans">✔</span>Еще текст</li>
+                    <li><span class="spans">✔</span>Еще больше текста</li>
+                </p><br>
+                <!-- <button>Подробнее</button> -->
+            </div>
+            <div class="press_6"><h1>Напишите нам</h1>
+                <p>
+                    <i class="fa fa-user-circle" aria-hidden="true"></i>
+                    <input class="inp_1" type="text" placeholder="Ваше имя"><br>
+                    <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                    <input class="inp_1" type="text" placeholder="Ваш Email"><br>
+                    <i class="fa fa-comment-o" aria-hidden="true"></i>
+                    <input class="inp_2" type="text" placeholder="Текст сообщения">
+                </p><br>
+                <button class="send">Отправить</button>
+            </div>
+        </div>
+        </div>
+    </main>
+    <footer id="footer_">Crimeapools@gmail.com</footer>
+
+    
+</body>
+</html>

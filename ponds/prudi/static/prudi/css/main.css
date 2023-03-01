@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&family=Ubuntu&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(../images/bg_3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#header_ {
+    height: 12vh;
+    width: 100%;
+    background: linear-gradient(to right, rgba(21, 21, 21, 0.941), rgba(0, 0, 0, 0.275) 20%, rgba(26, 26, 26, 0.903) 45%)
+}
+
+#logo {
+    float: left;
+    width: 40%;
+    height: 12vh;
+    line-height: 14vh;
+    text-align: center;
+    color: white;
+    font-size: 60px;
+    font-family: 'Tilt Neon', cursive;
+    text-shadow: black 10px 10px 10px;
+    cursor: default;
+}
+
+#logo::selection {
+    background: transparent;
+}
+
+#logo::-moz-selection {
+    background: transparent;
+}
+
+#nav {
+    float: left;
+    width: 60%;
+    height: 12vh;
+    line-height: 13vh;
+    
+}
+
+.nav_butt {
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0);
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-weight: bold;
+    padding: 6px;
+    border: none;
+}
+
+.nav_butt:hover {
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+}
+
+.nav_butt:first-of-type:hover {
+    background-color: rgb(15, 118, 137);
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+}
+
+.nav_butt:first-of-type {
+    color: black;
+    background-color: white;
+    border-radius: 5px;
+}
+
+#nav button:not(:last-of-type) {
+    margin-right: 1%;
+}
+
+#main_ {
+    width: 100%;
+}
+
+.main_1 {
+    height: 50vh;
+    width: 100%;
+    color: azure;
+    text-shadow: black 1px 1px 1px;
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.368), rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.418));
+}
+
+#logo_2 {
+    text-decoration: none;
+    font-family: 'Tilt Neon', cursive;
+    text-shadow: black 10px 10px 10px;
+    font-size: 55px;
+    color: azure;
+    padding-top: 70px;
+    padding-right: 30%;
+    padding-bottom: 8px;
+}
+
+.main_1 p {
+    font-family: 'Tilt Neon', cursive;
+    text-shadow: black 5px 5px 5px;
+    padding-right: 28%;
+    font-size: 22px;
+}
+
+.btms {
+    padding-right: 45%;
+}
+
+.btm_1 {
+    color: black;
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px;
+    margin-right: 10px;
+}
+
+.btm_1:hover {
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+}
+
+.btm_2 {
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.btm_2:hover {
+    color: black;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.main_2 {
+    height: 50vh;
+    width: 100%;
+    background-color: white;
+    color: black;
+    text-align: left;
+    padding-top: 7vh;
+    
+}
+
+.main_2 p, .main_3 p {
+    padding-top: 15px;
+    padding-right: 30px;
+    padding-left: 5px;
+}
+
+.main_3 p {
+    text-align: left;
+}
+
+.main_2 button, .main_3 button {
+    position: absolute;
+    bottom: 20px;
+    text-decoration: none;
+    padding: 4px;
+    border: 0;
+    border-radius: 5px;
+    color: white;
+}
+
+.press_6 .send {
+    position: absolute;
+    left: 60%;
+    font-size: 10px;
+}
+
+.press_4 .send_2 {
+    position: absolute;
+    left: 85px;
+    bottom: 140px;
+    font-size: 10px;
+}
+
+.press_4 .send_2:hover {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+    border-radius: 5px;
+    color: black;
+}
+
+.main_2 button {
+    background-color: rgb(15, 118, 137);
+}
+
+.main_2 button:hover {
+    background: none;
+    color: black;
+    border: 1px solid black;
+}
+
+.main_3 button {
+    background-color: rgb(15, 118, 137);
+    color: white;
+}
+
+.main_3 h1 {
+    text-align: left;
+}
+
+.press_1 {
+    float: left;
+    width: 20%;
+    height: 40vh;
+    border-right: 1px solid rgba(128, 128, 128, 0.5);
+    padding: 8px;
+    position: relative;
+    left: 20%;
+}
+
+.press_2 {
+    float: left;
+    width: 20%;
+    height: 40vh;
+    border-right: 1px solid rgba(128, 128, 128, 0.5);
+    padding: 5px;
+    position: relative;
+    left: 20%;
+}
+
+.press_3 {
+    float: left;
+    width: 20%;
+    height: 40vh;
+    padding: 5px;
+    position: relative;
+    left: 20%;  
+}
+
+.press_4 {
+    border-right: 1px solid rgba(128, 128, 128, 0.5);
+    float: left;
+    width: 20%;
+    height: 40vh;
+    padding: 5px;
+    position: relative;
+    left: 20%;
+}
+
+.press_5 {
+    border-right: 1px solid rgba(128, 128, 128, 0.5);
+    float: left;
+    width: 20%;
+    height: 40vh;
+    padding: 5px;
+    position: relative;
+    left: 20%;
+}
+
+.press_6 {
+    float: left;
+    width: 20%;
+    height: 40vh;
+    padding: 5px;
+    position: relative;
+    left: 20%;    
+}
+
+.press_6 i {
+    padding-right: 5px;
+}
+
+.inp_1 {
+    height: 3vh;
+    width: 80%;
+    background-color: rgba(128, 128, 128, 0.49);
+}
+
+.inp_2 {
+    height: 3vh;
+    width: 80%;
+    padding-bottom: 29px;
+    background-color: rgba(128, 128, 128, 0.49);
+}
+
+.inp_3 {
+    background-color: rgba(128, 128, 128, 0.49);
+    padding: 2px;
+}
+
+.main_2 h1 i, .main_3 h1 i {
+    padding: 1px;
+    padding-right: 20px;
+    height: 20px;
+    width: 20px;
+    color: rgb(15, 118, 137);
+}
+
+.main_3 {
+    height: 50vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.864);
+    color: rgb(255, 255, 255);
+    text-align: left;
+    padding-top: 7vh;
+}
+
+#footer_ {
+    height: 10vh;
+    width: 100%;
+    line-height: 10vh;
+    background: rgba(36, 36, 36, 0.974);
+    color: white;
+    text-align: center;
+    font-size: 17px;
+}
+
+.press_5 li {
+    list-style-type: none;
+}
+
+.spans {
+    font-size: 15px;
+    color: rgb(15, 118, 137);
+    padding-right: 4px;
+    font-weight: bold;
+}
