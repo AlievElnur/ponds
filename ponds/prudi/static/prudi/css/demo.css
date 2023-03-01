@@ -9,18 +9,18 @@
     --gutter: 30px;
     --side-small: 25;
     --side-big: 40;
-    --depth: 4000px;
+    --depth: 5700px;
     --transition: .75s cubic-bezier(0.75, 0.5, 0, 1);
 }
 
 @font-face {
     font-family: raleway_c;
-    src: url(../assets/fonts/raleway-v22-cyrillic-300.woff2);
+    src: url(../fonts/raleway-v22-cyrillic-300.woff2);
     font-weight: 300;
 }
 @font-face {
     font-family: raleway_c;
-    src: url(../assets/fonts/raleway-v22-cyrillic-100.woff2);
+    src: url(../fonts/raleway-v22-cyrillic-100.woff2);
     font-weight: 100;
 }
 
@@ -78,10 +78,6 @@ h1, h2, h3, h4 {
 }
 
 
-.frame_bg_first {
-    background-color: rgba(0, 0, 0, .2);
-}
-
 .frame_media_w {
     position: relative;
     width: calc(var(--index) * var(--side-big));
@@ -126,7 +122,35 @@ h1, h2, h3, h4 {
     background-color: rgba(0, 0, 0, .85);
 }
 
+.frame_bg_first {
+    background-color: rgba(0, 0, 0, .2);
+}
+
+.frame_bg_text {
+    background-color: rgba(0, 0, 0, .5);
+}
+
 video.frame_media_w {
     width: calc(var(--index) * var(--side-big));
     height: calc(var(--index) * var(--side-small));
+}
+
+.text_left > * {
+
+}
+
+.text_right > * {
+    position: relative;
+    left: calc(var(--index) * 13);
+}
+
+.frame h4 {
+    font-size: calc(var(--index) * 2);
+    width: min-content;
+    line-height: calc(var(--index) * 2.5);
+}
+
+.frame p {
+    max-width: 30vw;
+    margin-top: 3vh;
 }

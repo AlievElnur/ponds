@@ -8,7 +8,7 @@
 
     <link rel="stylesheet" href="{% static 'prudi\css\main.css' %}">
     <script src="{% static 'prudi\js\main.js' %}"></script>
-    
+
     <title>Document</title>
 </head>
 <body>
@@ -17,7 +17,7 @@
         <button>Система очистки</button>
         <button>цены</button>
         <button>Доп. услуги</button>
-        <button>Наши проекты</button>
+        <a href="{% url 'demo' %}"><button>Наши проекты</button></a>
     </header>
     <div class="nomber_1">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
     <div class="nomber_2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas, earum?</div>
@@ -28,7 +28,7 @@
             <li>2</li>
             <li>3</li>
             <li>4</li>
-            <a href="{% url 'demo' %}"><li>5</li></a>
+            <li>5</li>
         </ul></div>
         <div class="work"></div>
     </div>
