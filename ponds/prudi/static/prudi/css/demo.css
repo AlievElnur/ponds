@@ -136,7 +136,8 @@ video.frame_media_w {
 }
 
 .text_left > * {
-
+    position: relative;
+    left: calc(var(--index) * 13);
 }
 
 .text_right > * {
