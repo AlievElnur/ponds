@@ -9,8 +9,8 @@
     --gutter: 30px;
     --side-small: 25;
     --side-big: 40;
-    --depth: 6550px;
-    --transition: 800ms cubic-bezier(0.000, 0.005, 1.000, 1.025);
+    --depth: 5700px;
+    --transition: .75s cubic-bezier(0.75, 0.5, 0, 1);
 }
 
 @font-face {
