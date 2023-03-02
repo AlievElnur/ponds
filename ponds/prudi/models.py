@@ -1,9 +1,26 @@
 from django.db import models
 
-class Ponds(models.Model):
+class Fish(models.Model):
     title = models.CharField(max_length=255)
     photo = models.ImageField(upload_to="photo/")
+    content = models.TextField(blank=True)
 
-class Hoods(models.Model):
+class Sculptures(models.Model):
     title = models.CharField(max_length=255)
     photo = models.ImageField(upload_to="photo/")
+    content = models.TextField(blank=True)
+
+class Channels(models.Model):
+    title = models.CharField(max_length=255)
+    photo = models.ImageField(upload_to="photo/")
+    content = models.TextField(blank=True)
+
+class Plants(models.Model):
+    title = models.CharField(max_length=255)
+    photo = models.ImageField(upload_to="photo/")
+    content = models.TextField(blank=True)
+
+class Other(models.Model):
+    title = models.CharField(max_length=255)
+    photo = models.ImageField(upload_to="photo/")
+    content = models.TextField(blank=True)
