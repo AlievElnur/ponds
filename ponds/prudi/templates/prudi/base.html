@@ -24,13 +24,17 @@
     <div class="nomber_3">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
     <div class="nomber_4">
         <div class="list"><ul>
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
-            <li>4</li>
-            <li>5</li>
+            <a href="{% url 'fish' %}"><li>Рыбки</li></a>
+            <a href="{% url 'sculptures' %}"><li>Скульптуры</li></a>
+            <a href="{% url 'chanel' %}"><li>Каналы(искусственные русла)</li></a>
+            <a href="{% url 'plants' %}"><li>Декоративные растения</li></a>
+            <a href="{% url 'other' %}"><li>Прочие ландшафтные решения</li></a>
         </ul></div>
-        <div class="work"></div>
+        <div class="work">
+            {% block content %}
+
+            {% endblock %}
+        </div>
     </div>
 
 </body>
