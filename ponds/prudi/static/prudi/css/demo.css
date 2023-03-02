@@ -175,8 +175,21 @@ video.frame_media_w {
 
 .fa-arrows-alt {
     position: fixed;
-    top: 2vh;
-    right: 2vw;
+    top: 3vh;
+    right: 3vw;
     cursor: pointer;
     opacity: 0.75;
+}
+
+.fa-arrows-alt::before {
+    font-size: calc(var(--index) * 1.5);
+}
+
+.fa-arrows-alt:hover {
+    opacity: .5;
+    transition: .25s ease;
+}
+
+.fa-arrows-alt:active::before {
+    font-size: calc(var(--index) * 1.4);
 }
