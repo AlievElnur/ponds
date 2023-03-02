@@ -1,0 +1,23 @@
+{% extends 'prudi/base.html' %}
+
+{% block content %}
+
+{% for p in posts %}
+<ul>    
+    <div>
+
+{% if p.photo %}
+<p><img src="{{p.photo.url}}"></p>
+{% endif %}
+
+        <h1>{{p.title}}</h1>
+        <hr>
+        <br>
+        <p>{{p.content}}</p>
+        <hr>
+        <br>
+    </div>    
+{% endfor %}
+</ul>
+
+{% endblock %}
