@@ -19,6 +19,7 @@ html, body {
     inset: 0;
     z-index: 1;
     box-shadow: inset 0 0 250px rgba(0, 0, 0, 0.4);
+    padding-top: 11vh;
 }
 
 .swiper-slide.slider__item._2::before {
@@ -26,6 +27,7 @@ html, body {
     inset: 0;
     z-index: 1;
     box-shadow: inset 0 0 250px rgba(0, 0, 0, 0.4);
+    padding-top: 11vh;
 }
 
 .swiper-slide.slider__item._3::before {
@@ -33,6 +35,7 @@ html, body {
     inset: 0;
     z-index: 1;
     box-shadow: inset 0 0 250px rgba(0, 0, 0, 0.4);
+    padding-top: 11vh;
 }
 
 .swiper-slide.slider__item._4::before {
@@ -40,6 +43,7 @@ html, body {
     inset: 0;
     z-index: 1;
     box-shadow: inset 0 0 250px rgba(0, 0, 0, 0.4);
+    padding-top: 11vh;
 }
 
 .swiper-slide.slider__item._1 {
@@ -66,24 +70,20 @@ html, body {
 
 
 
-/* .header__ {
+.header__ {
     height: 10vh;
     width: 100%;
     background-color: rgb(161, 76, 76);
     position: fixed;
-} */
-
-/* .header__ {
-    text-align: center;
-    justify-content: center;
-    align-content: center;
-} */
+    z-index: 2;
+}
 
 .list {
     height: 100vh;
     width: 20%;
     background-color: rgba(46, 133, 136, 0.342);
     float: left;
+    padding-top: 11vh;
 }
 
 .work {
@@ -91,4 +91,5 @@ html, body {
     width: 80%;
     background-color: rgba(31, 105, 29, 0.432);
     float: left;
+    padding-top: 11vh;
 }
