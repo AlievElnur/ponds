@@ -13,6 +13,10 @@
     --transition: 800ms cubic-bezier(0.000, -0.015, 1.000, 0.985);
 }
 
+::-webkit-scrollbar {
+    width: 0;
+  }
+
 @font-face {
     font-family: raleway_c;
     src: url(../fonts/raleway-v22-cyrillic-300.woff2);
@@ -25,7 +29,7 @@
 }
 
 body {
-    background-color: black;
+    background: black;
     color: white;
     font-size: calc(var(--index) * .8);
     font-family: raleway_c, sans-serif;
@@ -119,15 +123,15 @@ h1, h2, h3, h4 {
 }
 
 .frame_bg {
-    background-color: rgba(0, 0, 0, .85);
+    background: rgba(0, 0, 0, 0.753);;
 }
 
 .frame_bg_first {
-    background-color: rgba(0, 0, 0, .2);
+    background: rgba(0, 0, 0, 0.158);;
 }
 
 .frame_bg_text {
-    background-color: rgba(0, 0, 0, .5);
+    background: rgba(0, 0, 0, 0.082);;
 }
 
 video.frame_media_w {
@@ -154,4 +158,25 @@ video.frame_media_w {
 .frame p {
     max-width: 30vw;
     margin-top: 3vh;
+}
+
+.soundbutton {
+    position: fixed;
+    bottom: 5vh;
+    right: 5vw;
+    cursor: pointer;
+    width: calc(var(--index) * 3);
+    transition: .25s ease;
+}
+
+.soundbutton.paused {
+    opacity: 0.25;
+}
+
+.fa-arrows-alt {
+    position: fixed;
+    top: 2vh;
+    right: 2vw;
+    cursor: pointer;
+    opacity: 0.75;
 }
