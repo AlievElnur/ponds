@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+:root {
+    --index: calc(1vw + 1vh);
+}
+
 html, body {
     height: 100%;
     background-color: rgb(0, 0, 0);
@@ -12,6 +16,22 @@ html, body {
 .swiper {
     height: 100vh;
     width: 100%;
+}
+
+.swiper-slide.slider__item._1 {
+    background-color: rgb(255, 255, 255);
+}
+
+.swiper-slide.slider__item._2 {
+    background-color: rgb(255, 255, 255);
+}
+
+.swiper-slide.slider__item._3 {
+    background-color: rgb(255, 255, 255);
+}
+
+.swiper-slide.slider__item._4 {
+    background-color: rgb(255, 255, 255);
 }
 
 .swiper-slide.slider__item._1::before {
@@ -46,36 +66,43 @@ html, body {
     padding-top: 11vh;
 }
 
-.swiper-slide.slider__item._1 {
-    background-color: rgb(27, 80, 68);
-}
-
-.swiper-slide.slider__item._2 {
-    background-color: rgb(110, 56, 86);
-}
-
-.swiper-slide.slider__item._3 {
-    background-color: rgb(58, 93, 116);
-}
-
-.swiper-slide.slider__item._4 {
-    background-color: rgb(194, 119, 119);
-}
-
 .slider__wrapper {
     will-change: transform;
     transform-style: preserve-3d;
 }
 
-
-
-
 .header__ {
-    height: 10vh;
+    height: 8vh;
     width: 100%;
-    background-color: rgb(161, 76, 76);
+    background-color: rgb(71, 85, 212);
     position: fixed;
     z-index: 2;
+    text-align: center;
+}
+
+.header__ a button {
+    text-decoration: none;
+}
+
+.header__ a button {
+    margin-top: 1.5vh;
+    font-size: calc(var(--index) * 0.8);
+    padding: calc(var(--index) * 0.3);
+}
+
+.header__ button {
+    border: 0;
+    background-color: transparent;
+    color:white;
+    cursor: pointer;
+}
+
+.header__ button:hover {
+
+}
+
+.header__ a:not(:last-of-type) {
+    margin-right: calc(var(--index) * .4);
 }
 
 .list {
