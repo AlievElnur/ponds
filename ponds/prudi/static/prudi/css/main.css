@@ -120,3 +120,14 @@ html, body {
     float: left;
     padding-top: 11vh;
 }
+
+.swiper-pagination {
+    color: rgb(214, 0, 0);
+    background-color: red;
+    position:absolute;
+    text-align: center;
+}
+
+.slide_in_slide {
+    overflow-y: scroll;
+}
