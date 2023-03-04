@@ -18,26 +18,32 @@
 </head>
 <body>  
     <header class="header__">
-        <a><button>Главная</button></a>
-        <a><button>Система очистки</button></a>
-        <a><button>цены</button></a>
-        <a><button>Доп. услуги</button></a>
-        <a href="{% url 'demo' %}"><button>Наши проекты</button></a>
+        <nav>
+            
+            <a><button>Главная</button></a>
+            <a><button>Система очистки</button></a>
+            <a><button>Цены</button></a>
+            <a><button>Дополнительно</button></a>
+            <a href="{% url 'demo' %}"><button>Наши проекты</button></a>
+            
+        </nav>
     </header>
         <div class="swiper slider">
             <div class="swiper-wrapper slider__wrapper">
 
                 <div class="swiper-slide slider__item _1">
-                    1
                 </div>
+
                 <div class="swiper-slide slider__item _2">
                 </div>
+
                 <div class="swiper-slide slider__item _3">
                 </div>
+
                 <div class="swiper-slide slider__item _4">
                     <div class="list">
-                        <ul>
-                            <a href="{% url 'fish' %}"><button><li>Рыбки</li></button></a>
+                        <ul class="nav_list_left">
+                            <a href="{% url 'fish' %}"><li>Рыбки</li></a>
                             <a href="{% url 'sculptures' %}"><li>Скульптуры</li></a>
                             <a href="{% url 'chanel' %}"><li>Каналы(искусственные русла)</li></a>
                             <a href="{% url 'plants' %}"><li>Декоративные растения</li></a>
@@ -45,6 +51,7 @@
                             
                         </ul>
                     </div>
+
                     <div class="work">
                         {% block content %}
                     

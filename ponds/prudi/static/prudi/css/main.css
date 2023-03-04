@@ -10,7 +10,7 @@
 
 html, body {
     height: 100%;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
 }
 
 .swiper {
@@ -19,11 +19,20 @@ html, body {
 }
 
 .swiper-slide.slider__item._1 {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(129, 129, 129);
+}
+
+.nav_list_left {
+
+}
+
+.nav_list_left li {
+    padding: calc(var(--index) * .1);
+    padding-left: calc(var(--index) * .9);
 }
 
 .swiper-slide.slider__item._2 {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(226, 226, 226);
 }
 
 .swiper-slide.slider__item._3 {
@@ -31,7 +40,7 @@ html, body {
 }
 
 .swiper-slide.slider__item._4 {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(218, 218, 218);
 }
 
 .swiper-slide.slider__item._1::before {
@@ -71,22 +80,23 @@ html, body {
     transform-style: preserve-3d;
 }
 
+        /* HEADER */            /* HEADER */            /* HEADER */            /* HEADER */            /* HEADER */            /* HEADER */
+
 .header__ {
     height: 8vh;
     width: 100%;
-    background-color: rgb(71, 85, 212);
+    /* background-color: rgb(71, 85, 212); */
+    background-color: transparent;
     position: fixed;
     z-index: 2;
-    text-align: center;
+    text-align: right;
 }
 
 .header__ a button {
     text-decoration: none;
-}
-
-.header__ a button {
+    color: black;
     margin-top: 1.5vh;
-    font-size: calc(var(--index) * 0.8);
+    font-size: calc(var(--index) * 0.5);
     padding: calc(var(--index) * 0.3);
 }
 
@@ -105,6 +115,14 @@ html, body {
     margin-right: calc(var(--index) * .4);
 }
 
+.header__ a:last-of-type {
+    margin-right: calc(var(--index) * 5);
+}
+
+
+
+
+
 .list {
     height: 100vh;
     width: 20%;
@@ -119,15 +137,4 @@ html, body {
     background-color: rgba(31, 105, 29, 0.432);
     float: left;
     padding-top: 11vh;
-}
-
-.swiper-pagination {
-    color: rgb(214, 0, 0);
-    background-color: red;
-    position:absolute;
-    text-align: center;
-}
-
-.slide_in_slide {
-    overflow-y: scroll;
 }

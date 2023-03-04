@@ -18,3 +18,4 @@ new Swiper('.slider_2', {
       },
       loop: true,
 })
+

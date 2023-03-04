@@ -1,11 +1,10 @@
 {% extends 'prudi/base.html' %}
 
 {% block content %}
-
+<div class='swiper slider_2'>
+<ul class='swiper-wrapper'>
 {% for p in posts %}
-<ul>    
-    <div>
-
+<div class="swiper-slide">
 {% if p.photo %}
 <p><img src="{{p.photo.url}}"></p>
 {% endif %}
@@ -19,5 +18,8 @@
     </div>    
 {% endfor %}
 </ul>
+<div class="swiper-button-prev"></div>
+<div class="swiper-button-next"></div>
+</div>
 
 {% endblock %}
