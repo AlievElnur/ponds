@@ -193,3 +193,4 @@ video.frame_media_w {
 .fa-arrows-alt:active::before {
     font-size: calc(var(--index) * 1.4);
 }
+
