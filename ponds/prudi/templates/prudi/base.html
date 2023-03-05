@@ -33,28 +33,22 @@
             <div class="swiper-wrapper slider__wrapper">
 
                 <div id="main_menu" class="swiper-slide slider__item _1">
-                    <div><img class="polygon" src="{% static 'prudi/images/clip.jpg' %}" alt="image">
-                        <p>
-                            {% block contact %}
-
-                            {% endblock %}
-                        </p>
-                    </div>>
+                    <div class="main_header">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus iste officia quas natus perspiciatis omnis tenetur ipsum odit iusto libero.</div>
+                    <div class="main_text">123</div>
+                    <div class="main_present">123</div>
                 </div>
 
                 <div id="clear" class="swiper-slide slider__item _2">
-                    <img class="polygon_2" src="{% static 'prudi/images/clip_2.jpg' %}" alt="image">
                 </div>
 
                 <div id="price" class="swiper-slide slider__item _3">
-                    <img class="polygon_3" src="{% static 'prudi/images/clip.jpg' %}" alt="image">
                 </div>
 
                 <div id="same" class="swiper-slide slider__item _4">
                     <div class="list">
                         <ul class="nav_list_left">
 
-                            <a href="{% url 'fish' %}#same"><li>Рыбки</li></a>
+                            <a class="btn-flip" data-back="Back" data-front="Front" href="{% url 'fish' %}#same"><li>Рыбки</li></a>
                             <a href="{% url 'sculptures' %}#same"><li>Скульптуры</li></a>
                             <a href="{% url 'chanel' %}#same"><li>Искусственные русла</li></a>
                             <a href="{% url 'plants' %}#same"><li>Декоративные растения</li></a>
