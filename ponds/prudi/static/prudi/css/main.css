@@ -206,3 +206,26 @@ html, body {
 .text_fish {
     margin: calc(var(--index) * .6);
 }
+
+.polygon, .polygon_2, .polygon_3, .polygon_4 {
+    height: 100vh;
+    width: 100%;
+    opacity: .7;
+    position:absolute;
+}
+
+.polygon {
+    clip-path: polygon(0 0, 0 100%, 100% 100%, 61% 9%, 100% 9%, 100% 100%, 100% 59%, 100% 100%, 71% 100%, 30% 0);
+}
+
+.polygon_2 {
+    clip-path: polygon(9% 9%, 0 9%, 0 100%, 76% 100%, 100% 0, 100% 100%, 100% 59%, 100% 100%, 100% 100%, 32% 100%);
+    clip-path: polygon(0 9%, 14% 9%, 43% 100%, 0% 100%);
+
+
+}
+
+.polygon_3 {
+    clip-path: ellipse(14% 15% at 15% 0%);
+
+}
