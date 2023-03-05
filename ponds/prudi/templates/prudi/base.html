@@ -16,35 +16,49 @@
 
     <title>Document</title>
 </head>
-<body>  
+<body> 
     <header class="header__">
-        <a><button>Главная</button></a>
-        <a><button>Система очистки</button></a>
-        <a><button>цены</button></a>
-        <a><button>Доп. услуги</button></a>
-        <a href="{% url 'demo' %}"><button>Наши проекты</button></a>
+            <div id="logo_">CrimeaPonds</div>
+        <nav>
+
+            <a><button onclick="scrollToMain()">Главная</button></a>
+            <a><button onclick="scrollToClear()">Система очистки</button></a>
+            <a><button onclick="scrollToPrice()">Цены</button></a>
+            <a><button onclick="scrollToSame()">Дополнительно</button></a>
+            <a href="{% url 'demo' %}"><button>Наши проекты</button></a>
+            
+        </nav>
     </header>
         <div class="swiper slider">
             <div class="swiper-wrapper slider__wrapper">
 
-                <div class="swiper-slide slider__item _1">
-                    1
+                <div id="main_menu" class="swiper-slide slider__item _1">
+                    <div><img class="polygon" src="{% static 'prudi/images/clip.jpg' %}" alt="image">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, ducimus?</p>
+                    </div>>
                 </div>
-                <div class="swiper-slide slider__item _2">
+
+                <div id="clear" class="swiper-slide slider__item _2">
+                    <img class="polygon_2" src="{% static 'prudi/images/clip_2.jpg' %}" alt="image">
                 </div>
-                <div class="swiper-slide slider__item _3">
+
+                <div id="price" class="swiper-slide slider__item _3">
+                    <img class="polygon_3" src="{% static 'prudi/images/clip.jpg' %}" alt="image">
                 </div>
-                <div class="swiper-slide slider__item _4">
+
+                <div id="same" class="swiper-slide slider__item _4">
                     <div class="list">
-                        <ul>
-                            <a href="{% url 'fish' %}"><button><li>Рыбки</li></button></a>
-                            <a href="{% url 'sculptures' %}"><button><li>Скульптуры</li></button></a>
-                            <a href="{% url 'chanel' %}"><button><li>Каналы(искусственные русла)</li></button></a>
-                            <a href="{% url 'plants' %}"><button><li>Декоративные растения</li></button></a>
-                            <a href="{% url 'other' %}"><button><li>Прочие ландшафтные решения</li></button></a>
+                        <ul class="nav_list_left">
+
+                            <a href="{% url 'fish' %}#same"><li>Рыбки</li></a>
+                            <a href="{% url 'sculptures' %}#same"><li>Скульптуры</li></a>
+                            <a href="{% url 'chanel' %}#same"><li>Искусственные русла</li></a>
+                            <a href="{% url 'plants' %}#same"><li>Декоративные растения</li></a>
+                            <a href="{% url 'other' %}#same"><li>Прочие ландшафтные решения</li></a>
                             
                         </ul>
                     </div>
+
                     <div class="work">
                         {% block content %}
                     
