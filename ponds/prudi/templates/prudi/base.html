@@ -16,14 +16,15 @@
 
     <title>Document</title>
 </head>
-<body>  
+<body> 
     <header class="header__">
+            <div id="logo_">CrimeaPods</div>
         <nav>
-            
-            <a><button>Главная</button></a>
-            <a><button>Система очистки</button></a>
-            <a><button>Цены</button></a>
-            <a><button>Дополнительно</button></a>
+
+            <a><button onclick="scrollToMain()">Главная</button></a>
+            <a><button onclick="scrollToClear()">Система очистки</button></a>
+            <a><button onclick="scrollToPrice()">Цены</button></a>
+            <a><button onclick="scrollToSame()">Дополнительно</button></a>
             <a href="{% url 'demo' %}"><button>Наши проекты</button></a>
             
         </nav>
@@ -31,23 +32,23 @@
         <div class="swiper slider">
             <div class="swiper-wrapper slider__wrapper">
 
-                <div class="swiper-slide slider__item _1">
+                <div id="main_menu" class="swiper-slide slider__item _1">
                 </div>
 
-                <div class="swiper-slide slider__item _2">
+                <div id="clear" class="swiper-slide slider__item _2">
                 </div>
 
-                <div class="swiper-slide slider__item _3">
+                <div id="price" class="swiper-slide slider__item _3">
                 </div>
 
-                <div class="swiper-slide slider__item _4">
+                <div id="same" class="swiper-slide slider__item _4">
                     <div class="list">
                         <ul class="nav_list_left">
                             <a href="{% url 'fish' %}"><li>Рыбки</li></a>
-                            <a href="{% url 'sculptures' %}"><button><li>Скульптуры</li></button></a>
-                            <a href="{% url 'chanel' %}"><button><li>Каналы(искусственные русла)</li></button></a>
-                            <a href="{% url 'plants' %}"><button><li>Декоративные растения</li></button></a>
-                            <a href="{% url 'other' %}"><button><li>Прочие ландшафтные решения</li></button></a>
+                            <a href="{% url 'sculptures' %}"><li>Скульптуры</li></a>
+                            <a href="{% url 'chanel' %}"><li>Каналы(искусственные русла)</li></a>
+                            <a href="{% url 'plants' %}"><li>Декоративные растения</li></a>
+                            <a href="{% url 'other' %}"><li>Прочие ландшафтные решения</li></a>
                             
                         </ul>
                     </div>
