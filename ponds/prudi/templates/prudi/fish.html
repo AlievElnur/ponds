@@ -1,5 +1,4 @@
 {% extends 'prudi/base.html' %}
-
 {% block content %}
 <div class='swiper slider_2'>
 <ul class='swiper-wrapper'>
@@ -9,16 +8,11 @@
 <p><img class="img_fish" src="{{p.photo.url}}"></p>
 {% endif %}
 <div class="text_fish">
-        <h1 class="name_fish">{{p.title}}</h1>
-        
-        <br>
-        <p class="content_fish">{{p.content|linebreaks}}</p>
-</div>
-</div>
+<h1 class="name_fish">{{p.title}}</h1><br>
+<p class="content_fish">{{p.content|linebreaks}}</p>
+</div></div>
 {% endfor %}
 </ul>
 <div class="swiper-button-prev"></div>
-<div class="swiper-button-next"></div>
-</div>
-
+<div class="swiper-button-next"></div></div>
 {% endblock %}
