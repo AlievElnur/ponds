@@ -9,4 +9,5 @@ urlpatterns = [
     path('chanel/', ChannelsOpen.as_view(), name='chanel'),
     path('plants/', PlantsOpen.as_view(), name='plants'),
     path('other/', OtherOpen.as_view(), name='other'),
+    path('/contact/', contact_form, name='contact_form'),
 ]

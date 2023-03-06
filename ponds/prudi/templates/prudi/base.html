@@ -43,9 +43,20 @@
                     <div class="main_text">
                         <div class="send_menu">
                             <div><h1 class="recall">Оставьте свой номер и мы вам перезвоним!</h1></div>
-                            <div class="input_text"><input type="text" placeholder="Введите имя"></div><br>
-                            <div class="input_text"><input type="text" placeholder="Введите номер телефона"></div><br>
-                            <div class="send_btm"><button>Отправить</button></div>
+                            <div>
+                                <form method="post" action="{% url 'contact_form' %}">
+                                    {% csrf_token %}
+                                    <label for="name">Имя:</label>
+                                    <input type="text" name="name" required>
+                                    <br>
+                                    <label for="phone">Телефон:</label>
+                                    <input type="tel" name="phone" required>
+                                    <br>
+                                    <input type="hidden" name="url_from" value="{{ request.META.HTTP_REFERER }}">
+                                    <input type="submit" value="Отправить">
+                                </form>                                                               
+                            </div>
+                            
                         </div>
                         <div class="icons_nav">
                             <section>
