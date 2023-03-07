@@ -51,10 +51,10 @@
                                 <form method="post" action="{% url 'contact_form' %}">
                                     {% csrf_token %}
                                 <div class="input_text">
-                                    <input type="text" name="name" required><br>
-                                    <input type="tel" name="phone" required><br>
+                                    <input type="text" name="name" required placeholder="Введите имя"><br>
+                                    <input type="tel" name="phone" required placeholder="Введите номер телефона"><br>
                                     <input type="hidden" name="url_from" value="{{ request.META.HTTP_REFERER }}">
-                                    <input type="submit" value="Отправить">
+                                    <button class="btn_send"><input type="submit" value="Отправить"></button>
                                 </div>
                                 </form>                                                               
                             </div>
