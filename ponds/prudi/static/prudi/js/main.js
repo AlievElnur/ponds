@@ -1,5 +1,5 @@
 if (performance.navigation.type === performance.navigation.TYPE_RELOAD) {
-  window.location = "http://127.0.0.1:8000";
+  window.location = "";
 }
 
 new Swiper('.slider', {
@@ -46,18 +46,4 @@ let element_4 = document.getElementById("main_menu");
 
 function scrollToMain() {
   element_4.scrollIntoView({behavior: "smooth", block: "start"});
-}
-
-
-localStorage.setItem('same', window.pageYOffset);
-
-window.onload = function() {
-  var scrollPosition = localStorage.getItem('same');
-  if (scrollPosition !== null) {
-    window.scrollTo(0, scrollPosition);
-  }
-}
-
-window.onbeforeunload = function () {
-  window.scrollTo(0, 0);
 }

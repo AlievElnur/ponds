@@ -876,28 +876,32 @@ background: linear-gradient(to right, #E2E2E2, #C9D6FF); /* W3C, IE 10+/ Edge, F
 }
 
 // variables
-$icon-size: 3rem;
+$icon-size: calc(var(--index) * 1.5);
 $icon-color: #D8D8D8;
-$main-color: #F85E6A;
+$main-color: darkblue;
 
 // Pricing table
 .pricing-table {
     display: table;
     width: 100%;
     .pricing-option {
-        width: 28%;
+        width: 30%;
+        height: 30vh;
+        margin-top: 1vh;
+        margin-right: 1vh;
         background:white;
         float: left;
         padding: 2%;
         text-align: center;
         transition: all .3s ease-in-out;
         &:nth-child(even) {
-            margin: 0 2%;
+            margin-top: 1vh;
+            margin-right: 1vh;
         }
         &:hover {
             cursor: pointer;
             box-shadow: 0px 2px 30px rgba(0,0,0,0.3);
-            transform: scale(1.04);
+            transform: scale(1.54);
             i, h1, span, b {
                 color: $main-color;
             }
@@ -929,14 +933,15 @@ $main-color: #F85E6A;
         }
         p {
             color: #999;
-            padding: 0 10px;
+            font-size: calc(var(--index) * .6);
+            padding: 0 calc(var(--index) * 1);
             line-height: 1.3;
         }
         .price {
             position: relative;
             .front {
                 span.price {
-                    font-size: 2rem;
+                    font-size: calc(var(--index) * .8);
                     text-transform: uppercase;
                     margin-top: 20px;
                     display: block;
@@ -944,14 +949,14 @@ $main-color: #F85E6A;
                     position: relative;
                     b {
                         position: absolute;
-                        font-size: 1rem;
-                        margin-left: 2px;
+                        font-size: calc(var(--index) * .5);
+                        margin-left: calc(var(--index) * .1);
                         font-weight: 600;
                     }
                 }
             }
             .back {
-                opacity: 0;
+                opacity: 1;
                 visibility: hidden;
                 transition: all .3s ease-in-out;
                 a.button {
@@ -962,7 +967,7 @@ $main-color: #F85E6A;
                     color: white;
                     position: absolute;
                     font-size: 13px;
-                    top: -5px;
+                    top: -1%;
                     left: 0;
                     right: 0;
                     width: 150px;
@@ -997,3 +1002,6 @@ $main-color: #F85E6A;
     }
 }
 
+.material-icons-outlined {
+    color: #000;
+}
