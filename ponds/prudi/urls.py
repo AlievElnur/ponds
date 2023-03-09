@@ -8,6 +8,5 @@ urlpatterns = [
     path('sculptures/', SculpturesOpen.as_view(), name='sculptures'),
     path('chanel/', ChannelsOpen.as_view(), name='chanel'),
     path('plants/', PlantsOpen.as_view(), name='plants'),
-    path('other/', OtherOpen.as_view(), name='other'),
-    path('/contact/', contact_form, name='contact_form'),
+    path('contact/', contact_form, name='contact_form'),
 ]

@@ -23,7 +23,7 @@ def contact_form(request):
                 'phone': form.cleaned_data['phone']
             }
         
-            html_body = render_to_string('email_templates/contact.html', data)
+            html_body = render_to_string('prudi/contact.html', data)
             msg = EmailMultiAlternatives(subject='Звонок', from_email='elnurik97qw@yandex.ru', to=['elnurik97qw@yandex.ru'])
             msg.attach_alternative(html_body, "text/html")
             msg.send()
@@ -57,7 +57,3 @@ class PlantsOpen(ListView):
     template_name = 'prudi/plants.html'
     context_object_name = 'posts'
 
-class OtherOpen(ListView):
-    model = Other
-    template_name = 'prudi/other.html'
-    context_object_name = 'posts'
