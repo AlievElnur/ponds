@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa&display=swap");
 @import "https://unpkg.com/open-props";
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+SC:ital,wght@0,400;0,700;0,900;1,400&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -291,7 +292,7 @@ html, body {
   margin-top: 1.5vh;
   font-size: calc(var(--index) * 0.9);
   padding: calc(var(--index) * 0.3);
-  font-family: "Comfortaa", cursive;
+  font-family: "Alegreya SC", serif;
   text-shadow: 0 0 calc(var(--index) * 0.1) #000;
 }
 
@@ -318,7 +319,7 @@ html, body {
   width: 20%;
   float: left;
   padding-top: 11vh;
-  font-family: "Comfortaa", cursive;
+  font-family: "Alegreya SC", serif;
   margin-top: calc(var(--index) * 4.2);
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -383,7 +384,7 @@ html, body {
   width: 100%;
   padding-top: calc(var(--index) * 3.5);
   padding-left: calc(var(--index) * 2.2);
-  font-family: "Comfortaa", cursive;
+  font-family: "Alegreya SC", serif;
 }
 
 .main_header h2 {
@@ -831,7 +832,8 @@ section {
   text-shadow: #000 1px 1px 1px;
   text-align: center;
   font-size: calc(var(--index) * 1.7);
-  margin-bottom: calc(var(--index) * 2);
+  margin-bottom: 1vh;
+  padding-top: 2vh;
 }
 
 .tbl_block {
@@ -843,15 +845,13 @@ section {
   width: 100%;
 }
 .pricing-table .pricing-option {
-  width: 30%;
-  height: 30vh;
+  width: 32%;
+  height: 36vh;
   margin-top: 1vh;
   margin-right: 1vh;
-  background: rgba(248, 165, 48, 0.7450980392);
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(248, 165, 48, 0.7254901961)), to(rgba(255, 181, 121, 0.7450980392)));
-  background: linear-gradient(to bottom, rgba(248, 165, 48, 0.7254901961), rgba(255, 181, 121, 0.7450980392));
+  background: rgb(188, 188, 255);
   float: left;
-  padding: 2%;
+  padding: 1.5%;
   text-align: center;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -864,14 +864,14 @@ section {
   cursor: pointer;
   -webkit-box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.3);
           box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.3);
-  -webkit-transform: scale(1.54);
-          transform: scale(1.54);
+  -webkit-transform: scale(1.34);
+          transform: scale(1.34);
 }
 .pricing-table .pricing-option:hover i, .pricing-table .pricing-option:hover h1, .pricing-table .pricing-option:hover span, .pricing-table .pricing-option:hover b {
   color: rgb(188, 188, 255);
 }
 .pricing-table .pricing-option:hover .front {
-  opacity: 0;
+  opacity: 1;
   visibility: hidden;
 }
 .pricing-table .pricing-option:hover .back {
@@ -884,7 +884,7 @@ section {
 }
 .pricing-table .pricing-option hr {
   border: none;
-  border-bottom: 1px solid #F0F0F0;
+  border-bottom: calc(var(--index) * 0.1) solid rgba(226, 226, 226, 0.4196078431);
 }
 .pricing-table .pricing-option i {
   font-size: calc(var(--index) * 1.5);
