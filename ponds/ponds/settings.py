@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'debug_toolbar',
     'prudi.apps.PrudiConfig',
 ]
 
@@ -49,6 +50,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'debug_toolbar.middleware.DebugToolbarMiddleware',
 ]
 
 ROOT_URLCONF = 'ponds.urls'
@@ -136,3 +138,7 @@ EMAIL_HOST_USER = "elnurik97qw@yandex.ru"
 EMAIL_HOST_PASSWORD = "ovelvsbimkzliyjm"
 EMAIL_USE_TLS = False
 EMAIL_USE_SSL = True
+
+INTERNAL_IPS = [
+    '127.0.0.1',
+]
