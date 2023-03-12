@@ -21,11 +21,16 @@ new Swiper('.slider_2', {
         el: '.swiper-scrollbar',
       },
       loop: true,
+      mousewheel: true,
 })
 
 new Swiper('.slider_3', {
     speed: 800,
     spaceBetween: 1,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+  },
     pagination: {
       el: '.swiper-pagination',
       type: 'bullets',
@@ -38,8 +43,8 @@ new Swiper('.slider_3', {
         el: '.swiper-scrollbar',
       },
       loop: true,
+      mousewheel: true,
 })
-
 
 let element_1 = document.getElementById("same");
 
