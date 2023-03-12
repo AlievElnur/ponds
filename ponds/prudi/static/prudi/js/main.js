@@ -23,6 +23,23 @@ new Swiper('.slider_2', {
       loop: true,
 })
 
+new Swiper('.slider_3', {
+    speed: 800,
+    spaceBetween: 1,
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      scrollbar: {
+        el: '.swiper-scrollbar',
+      },
+      loop: true,
+})
+
 
 let element_1 = document.getElementById("same");
 
